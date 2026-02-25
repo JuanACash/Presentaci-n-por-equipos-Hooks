@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react'
-import Hijo from './Hijo'
+import Hijo from './components/Hijo'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,12 +10,9 @@ function App() {
 
   return (
     <>
-      <h1>Ejemplo useCallback</h1>
-
       <button onClick={incrementar}>
         Contador: {count}
       </button>
-
       <Hijo onIncrementar={incrementar} />
     </>
   )
